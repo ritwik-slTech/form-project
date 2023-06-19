@@ -1,0 +1,110 @@
+
+
+.landing-form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landing-form input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.75);
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  .landing-form section{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+    width: 80%;
+    margin-top: 2rem;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .form-div{
+    margin-bottom: 10%;
+    height: 57vh;
+    width: 200px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .form-div{
+      width: 75%;
+      max-width: 450px;
+      margin-top:15% ;
+      margin-left: 4.5rem;
+    }
+    .landing-form section{
+      margin-top: 1rem;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .landing-form input{
+      margin-left: .25rem ;
+      width: 100%;
+    }
+  }
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form-div{
+    height: 50vh;
+    margin-top: 25rem;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-left: 17%;
+  }
+  .landing-form section{
+    margin-top: 2.5rem;
+  }
+  .landing-form input{
+    flex-grow: 1;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .landing-form {
+    background-image: url("../../assets/pc-bg.png");
+    align-items: flex-start;
+  }
+  .form-div{
+    height: 60vh;
+    margin-top: 0;
+    margin-left: 0rem;
+    width: 30%;
+    max-width: 400px;
+    margin-left: 5rem;
+    margin-left: 10%;
+    font-size: 1rem;
+  }
+  .landing-form section{
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .form-div{
+    margin-left: 8%;
+    width: 32%;
+    max-width: 500px;
+  }
+}
